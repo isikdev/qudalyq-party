@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital,wght@0,300;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@400;500;900&display=swap')
+$gold: #EF9F4F
+$brown: #5a3816
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Merriweather', serif
+    transition: .3s
+body,html
+    scroll-behavior: smooth
+    text-rendering: optimizeSpeed
+.container-fluid
+    max-width: 100%
+    width: 100%
+    padding: 0px 0px
+    margin: 0 auto
+.container
+    max-width: 1440px
+    width: 100%
+    padding: 0px 20px
+    margin: 0px auto
+h1,
+h2,
+h3
+    font-size: 48px
+h4
+    font-size: 34px
+.btn
+    display: none
+header
+    .navbar
+        padding: 10px 0px
+        background-color: #08223c
+        .nav-content
+            display: grid
+            grid-template-columns: 2fr 2fr 1fr
+            align-items: center
+            .nav-brand
+                img
+                    max-width: 80%
+            .nav-links
+                position: relative
+                nav
+                    margin: 0px auto
+                    ul
+                        display: flex
+                        li
+                            list-style: none
+                            margin-left: 15px
+                            &:nth-child(1)
+                                margin-left: 0px
+                            a
+                                text-decoration: none
+                                font-size: 16px
+                                color: #fff
+            .nav-phone
+                a
+                    display: flex
+                    text-decoration: none
+                    p
+                        margin-left: 10px
+                        color: #fff
+.info-company
+    background-image: url("../img/bg.png")
+    background-size: cover
+    background-repeat: no-repeat
+    padding: 50px 0px
+    .info-content
+        .info-intro
+            h1
+                font-family: 'Montserrat', sans-serif
+                font-weight: 900
+                color: #fff
+                margin-top: 97px
+                span
+                    font-family: 'Montserrat', sans-serif
+                    color: $gold
+            p
+                font-family: 'Lato'
+                font-size: 22px
+                font-style: italic
+                font-weight: 400
+                line-height: 26px
+                color: #fff
+                margin: 12px 0px
+            .download-check
+                margin: 70px 0px
+                display: flex
+                button
+                    padding: 12px 35px
+                    font-size: 16px
+                    color: #fff
+                    background: linear-gradient(180deg, #EF9F4F 0%, #BD742B 100%)
+                    border-radius: 16px
+                    border: 0px none
+                    cursor: pointer
+                    &:hover
+                        box-shadow: 1px 10px 54px 20px rgba(239, 159, 79, 0.19)
+                p
+                    margin-left: 13px
+                    font-family: 'Lato'
+                    font-size: 18px
+                    font-style: italic
+                    font-weight: 400
+                    line-height: 22px
+                    color: #B2B3B5
+            .info-hotel
+                display: flex
+                justify-content: space-between
+                max-width: 450px
+                margin: 30px 0px
+                .hotel-item
+                    display: flex
+                    flex-direction: column
+                    img
+                        display: flex
+                        justify-content: center
+                        margin: 0px auto
+                    p
+                        text-align: center
+                        font-family: 'Lato', sans-serif
+                        font-weight: 500
+                        text-align: center
+                        span
+                            color: $gold
+                            font-style: normal
+.about
+    margin: 140px 0px
+    background-image: url("../img/bg-uzor.svg")
+    background-size: 90% 100%
+    background-repeat: no-repeat
+    background-position: bottom
+    .about-content
+        .about-intro
+            .intro-item
+                display: flex
+                h1
+                    color: $brown
+                    margin: 20px 7px
+                    font-family: 'Montserrat', sans-serif
+                    span
+                        color: $gold
+                        font-family: 'Montserrat', sans-serif
+        .about-subtitle
+            display: flex
+            justify-content: space-between
+            margin: 50px 0px
+            .about-item-subtitle
+                p
+                    max-width: 90%
+                    font-size: 18px
+                    font-family: 'Lato', sans-serif
+                    color: $brown
+                    margin: 100px 0px
+                    span
+                        color: $gold
+            .about-iframe
+                iframe
+                    max-width: 100%
+.home
+    margin: 140px 0px
+    background-image: url("../img/bg-uzor.svg")
+    background-size: 90% 100%
+    background-repeat: no-repeat
+    background-position: bottom
+    .home-content
+        .home-intro
+            .intro-item
+                display: flex
+                h1
+                    color: $brown
+                    margin: 20px 7px
+                    font-family: 'Montserrat', sans-serif
+                    span
+                        color: $gold
+                        font-family: 'Montserrat', sans-serif
+        .home-cards
+            display: flex
+            justify-content: space-between
+            .home-card
+                display: flex
+                flex-direction: column
+                .card-img
+                    img
+                        margin: 0px auto
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        max-width: 70%
+                .card-subtitle
+                    p
+                        color: $brown
+                        font-family: 'Lato', sans-serif
+                        text-align: center
+                        max-width: 60%
+                        margin: 20px auto
+                        span
+                            color: $gold
+                            font-family: 'Lato', sans-serif
+.benefits
+    .benefits-content
+        .benefits-cards
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            .benefit-card
+                margin: 30px auto
+                img
+                    display: flex
+                    justify-content: center
+                    flex-direction: column
+                    margin: 0px auto
+                p
+                    color: $brown
+                    font-family: 'Lato', sans-serif
+                    text-align: center
+                    margin: 10px auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    flex-wrap: wrap
+                    span
+                        color: $gold
+                        font-family: 'Lato', sans-serif
+.request
+    margin: 140px 0px
+    padding: 50px 0px
+    background-image: url("../img/request.png")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: bottom
+    .request-content
+        .request-intro
+            margin: 0px auto
+            text-align: center
+            h1,p
+                color: #fff
+                font-family: 'Montserrat', sans-serif
+                font-weight: 700
+        .request-forms
+            form
+                .request-inputs
+                    display: flex
+                    justify-content: space-between
+                    max-width: 50%
+                    margin: 30px auto
+                    input
+                        padding: 8px 15px
+                        outline: none
+                        font-family: 'Lato', sans-serif
+                        font-size: 14px
+                        border-radius: 4px
+                        border: 0px none
+                        width: 244px
+                button
+                    padding: 12px 35px
+                    font-size: 16px
+                    margin: 0px auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    color: #fff
+                    background: linear-gradient(180deg, #EF9F4F 0%, #BD742B 100%)
+                    border-radius: 16px
+                    border: 0px none
+                    cursor: pointer
+                    &:hover
+                        box-shadow: 1px 10px 54px 20px rgba(239, 159, 79, 0.19)
+.services
+    .services-content
+        .service-intro
+            display: flex
+            h1
+                color: $brown
+                margin: 20px 7px
+                font-family: 'Montserrat', sans-serif
+                span
+                    color: $gold
+                    font-family: 'Montserrat', sans-serif
+        .services-lists-content
+            display: flex
+            justify-content: space-between
+            .services-lists
+                .services-subtitle
+                    p
+                        color: $brown
+                        font-size: 20px
+                .services-lists
+                    margin: 50px 0px
+                    ul
+                        display: flex
+                        flex-direction: column
+                        li
+                            color: $gold
+                            list-style: none
+                            font-size: 22px
+                            font-family: 'Lato', sans-serif
+                            &::before
+                                color: $gold
+                                content: "▪"
+                                padding-right: 10px
+                    button
+                        padding: 12px 35px
+                        font-size: 16px
+                        margin: 30px 0px
+                        color: #fff
+                        background: linear-gradient(180deg, #EF9F4F 0%, #BD742B 100%)
+                        border-radius: 16px
+                        border: 0px none
+                        cursor: pointer
+                        &:hover
+                            box-shadow: 1px 10px 54px 20px rgba(239, 159, 79, 0.19)
+            .services-img-slider
+                margin: 50px 0px
+                img
+                    max-width: 100%
+
+footer
+    background-color: #292929
+    background-image: url('../img/bg-uzor.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    padding: 50px 0px
+    .footer-content
+        .footer-intro
+            a
+                img
+                    max-width: 30%
+                    margin: 0px auto
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+            .footer-tel
+                display: flex
+                justify-content: center
+                p
+                    color: #fff
+                    margin-left: 10px
+@media screen and (max-width: 1240px)
+    .container
+        max-width: 1240px
+        width: 100%
+        padding: 0px 10px
+        margin: 0 auto
+@media screen and (max-width: 920px)
+    .container
+        max-width: 920px
+        width: 100%
+        padding: 0px 10px
+        margin: 0 auto
+    h1,h2,h3
+        font-size: calc(24px + (16 + 16 * 0.7) * ((100vw - 320px) / 920))
+    .btn
+        display: block
+        position: absolute
+        right: 40px
+        top: 20px
+        background: none
+        outline: none
+        border: 0px none
+    header
+        .navbar
+            .nav-content
+                grid-template-columns: 3fr 1fr
+                align-items: center
+                align-self: center
+                .nav-phone
+                    display: none
+                .nav-links
+                    nav
+                        ul
+                            li:nth-child(1)
+                                margin-left: 15px
+    .info-intro
+        text-align: center
+    .info-company
+        .info-content
+            .info-intro
+                .info-hotel
+                    margin: 0px auto
+                    max-width: 100%
+                    .hotel-item
+                        margin: 0px auto
+                        justify-content: center
+    .download-check
+        margin: 20px auto
+        flex-direction: column
+        button
+            max-width: 50%
+            margin: 0px auto
+        p
+            margin: 0px auto
+            text-align: center
+    .menu
+        min-height: 5vh
+        background: #212121
+        width: 100%
+        position: fixed
+        left: -120%
+        top: 0
+        z-index: 2000
+        padding: 15px 20px
+        transition: .5s
+        display: block
+        flex-direction: column
+        ul
+            flex-direction: column
+            li
+                text-align: center
+                margin: 30px auto
+                a
+                    text-align: left
+    .menu-active
+        left: 0
+    .about-subtitle
+        flex-direction: column
+    .home-cards
+        flex-direction: column
+    .benefits
+        .benefits-content
+            .benefits-cards
+                grid-template-columns: 1fr 1fr 2fr
+    .service-intro
+        text-align: center
+        margin: 0px auto
+    .services-lists-content
+        flex-direction: column
+        .services-img-slider
+            img
+                margin: 0px auto
+                display: flex
+                justify-content: center
+                flex-wrap: wrap
+        .services-lists
+            margin: 0px auto
+            justify-content: center
+            text-align: center
+    form
+        .request-inputs
+            flex-direction: column
+            input
+                margin: 20px auto
+@media screen and (max-width: 540px)
+    .container
+        max-width: 540px
+        width: 100%
+        padding: 0px 10px
+        margin: 0 auto
+    header
+        .navbar
+            .nav-content
+                grid-template-columns: 3fr 1fr
+                .nav-phone
+                    display: none
+    .benefits
+        .benefits-content
+            .benefits-cards
+                grid-template-columns: 1fr
+    .about
+        .about-content
+            .about-subtitle
+                .about-item-subtitle
+                    p
+                        max-width: 100%
+                        margin-top: 10px
+    .home
+        margin: 40px 0px
+        .home-card
+            margin: 20px 0px
+    .request
+        .request-content
+            .request-forms
+                form
+                    .request-inputs
+                        input
+                            width: 80%
+    .services
+        .services-content
+            .services-intro
+                img
+                    width: 20%
+                    height: 20%
